@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.2092
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "player", "player\player.vcxproj", "{10CC3D28-7609-49BC-ACA3-1FCB423E77D5}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WriteVideoToFile", "WriteVideoToFile\WriteVideoToFile.vcxproj", "{1CC0A722-8D0C-4448-B9CB-0F1D17D34370}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sws_scale_exam", "sws_scale_exam\sws_scale_exam.vcxproj", "{DE8DD25B-71CC-4C7D-835D-76EC25E58E65}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +31,14 @@ Global
 		{1CC0A722-8D0C-4448-B9CB-0F1D17D34370}.Release|x64.Build.0 = Release|x64
 		{1CC0A722-8D0C-4448-B9CB-0F1D17D34370}.Release|x86.ActiveCfg = Release|Win32
 		{1CC0A722-8D0C-4448-B9CB-0F1D17D34370}.Release|x86.Build.0 = Release|Win32
+		{DE8DD25B-71CC-4C7D-835D-76EC25E58E65}.Debug|x64.ActiveCfg = Debug|x64
+		{DE8DD25B-71CC-4C7D-835D-76EC25E58E65}.Debug|x64.Build.0 = Debug|x64
+		{DE8DD25B-71CC-4C7D-835D-76EC25E58E65}.Debug|x86.ActiveCfg = Debug|Win32
+		{DE8DD25B-71CC-4C7D-835D-76EC25E58E65}.Debug|x86.Build.0 = Debug|Win32
+		{DE8DD25B-71CC-4C7D-835D-76EC25E58E65}.Release|x64.ActiveCfg = Release|x64
+		{DE8DD25B-71CC-4C7D-835D-76EC25E58E65}.Release|x64.Build.0 = Release|x64
+		{DE8DD25B-71CC-4C7D-835D-76EC25E58E65}.Release|x86.ActiveCfg = Release|Win32
+		{DE8DD25B-71CC-4C7D-835D-76EC25E58E65}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

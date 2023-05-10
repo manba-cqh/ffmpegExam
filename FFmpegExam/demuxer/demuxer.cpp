@@ -42,9 +42,11 @@ int main()
 		return -1;
 	}
 	videoindex = -1;
+	AVCodecParameters* codecPar = nullptr;
 	for (i = 0; i < pFormatCtx->nb_streams; i++) {
 		//遍历streams数组，找到视频流在streams中的索引
-		AVCodecID codecId = pFormatCtx->streams[i]->codecpar->codec_id;
+		codecPar = pFormatCtx->streams[i]->codecpar;
+		AVCodecID codecId = codecPar->codec_id;
 		pCodec = avcodec_find_decoder(codecId);
 		if (pCodec->type == AVMEDIA_TYPE_VIDEO) {
 			videoindex = i;
@@ -56,8 +58,7 @@ int main()
 	}
 
 	pCodecCtx = avcodec_alloc_context3(pCodec);
-	ret = avcodec_parameters_to_context(pCodecCtx, pFormatCtx->streams[i]->codecpar);
-	pCodec = avcodec_find_decoder(pCodecCtx->codec_id);//查找解码器
+	ret = avcodec_parameters_to_context(pCodecCtx, codecPar);
 	if (pCodec == NULL) {
 		printf("Codec not found.\n");
 		return -1;
